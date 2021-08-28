@@ -1,0 +1,476 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab", sans-serif;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  background-color: #ebebeb;
+  min-width: 1000px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  border: 0;
+  outline: 0;
+  padding: 7px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 3px;
+  font-size: 14px;
+  box-shadow: 0 0 10px 0 #000;
+  transition: all 0.2s ease;
+}
+
+.btn-green {
+  background-color: #27ae60;
+  color: white;
+}
+
+.btn-white {
+  background-color: #ebebeb;
+  color: #000;
+}
+
+.navigation {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  z-index: 150;
+  min-width: 1000px;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 5px 0 black;
+  background-color: rgb(40, 40, 40);
+}
+
+.navigation .container,
+.navigation-buttons,
+.navigation-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navigation-links li:not(:last-of-type) {
+  margin-right: 10px;
+}
+
+.navigation-buttons .logo img {
+  max-height: 25px;
+}
+
+.navigation-buttons .logo a {
+  padding: 13px 15px;
+}
+
+.navigation-buttons .logo a:hover {
+  background-color: inherit;
+}
+
+.navigation-buttons li {
+  height: 100%;
+}
+
+.navigation-buttons a {
+  display: inline-block;
+  color: #e5e5e5;
+  transition: all 0.2s ease;
+  padding: 16px 15px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.navigation-buttons a:hover {
+  background-color: #e5e5e5;
+  color: #282828;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header button:hover {
+  background-color: #282828;
+  color: #e5e5e5;
+}
+
+.header .banner-image {
+  max-width: 100%;
+}
+
+.header p {
+  color: black;
+  margin: 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 5%;
+}
+.header button {
+  transition: 0.05s;
+  font-size: 18px;
+  border: 0;
+  background-color: #e5e5e5;
+  color: #282828;
+  font-family: Roboto Slab;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 40%;
+  margin-right: 40%;
+  outline: 0;
+  cursor: pointer;
+}
+
+.header {
+  background-image: url("../img/banner.png");
+  background-position: top left;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.2);
+  min-width: 1000px;
+  position: relative;
+  z-index: 10;
+  align-items: center;
+  margin-top: 50px;
+  height: 100vh;
+  max-height: 54.55vw;
+}
+
+.header__link {
+  margin: 70px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+.header__link:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: 0.3s ease all;
+  border-radius: 50%;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 50%;
+  position: relative;
+  z-index: 9;
+  background-image: url(../assets/ucu.png);
+  background-repeat: no-repeat;
+  background-position: right -50%;
+  background-color: #ffffff;
+  padding: 100px 0;
+}
+
+.videos {
+  background-color: white;
+  padding: 60px 0;
+  align-items: center;
+}
+
+.videos .videos-header {
+  margin-bottom: 25px;
+}
+
+.videos .videos-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.videos .videos-container .playlist {
+  width: calc(50% - 40px);
+  margin: 20px;
+}
+
+.speakers {
+  position: relative;
+  z-index: 20;
+  padding-bottom: 60px;
+  height: auto;
+  padding-top: 50px;
+}
+
+.program {
+  height: auto;
+  background-color: white;
+}
+
+.program .program__image {
+  margin: 55px auto;
+}
+
+.header > div.contacts {
+  display: block;
+  position: absolute;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  text-align: left;
+  padding: 10px 0;
+  color: black;
+  font-size: 110%;
+}
+.half {
+  width: 50%;
+  float: left;
+}
+
+.shadowed-info {
+  box-sizing: border-box;
+}
+.header > div {
+  display: inline-block;
+  width: 60%;
+  margin: 0 auto;
+}
+.header > div span {
+  border-left: 20px solid rgb(40, 40, 40);
+  display: block;
+}
+.header h1 {
+  color: #e5e5e5;
+  background: rgb(40, 40, 40);
+  position: relative;
+  align-content: center;
+  margin: 0;
+  font-size: 69px;
+  padding: 0;
+
+  display: inline;
+}
+
+.slick-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.slick-slider .slick-slide img {
+  width: 210px;
+  transition: 0.3s;
+  border-radius: 115px;
+  height: 210px;
+}
+.slick-slide > span > span {
+  font-size: 10px;
+  display: block;
+  align-self: flex-end;
+  margin-top: 5px;
+}
+.slick-slide > span {
+  width: 100%;
+  display: flex;
+  height: 230px;
+  position: absolute;
+  flex-wrap: wrap;
+  top: 0;
+  left: 0;
+  color: white;
+  background: #282828;
+  opacity: 0;
+  font-size: 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+.tickets .half.left div > div {
+  padding: 10px 20px;
+  background-color: white;
+  display: inline-block;
+  margin: 10px;
+  border-radius: 3px;
+  box-shadow: 0 0 10px -2px #c1c1c1;
+}
+.tickets a:hover button {
+  background-color: #16a085;
+}
+.partners {
+  padding: 30px 0;
+  height: auto;
+  display: flex;
+  background-color: #ffffff;
+}
+.tickets h2,
+.partners h2,
+.videos h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.partners h2 {
+  margin-bottom: 40px;
+}
+.tickets h2 {
+  font-weight: normal;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+footer a {
+  color: white !important;
+}
+footer {
+  padding: 20px 0;
+  font-family: Roboto Slab;
+  font-size: 16px;
+  background-color: rgb(40, 40, 40);
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.partner .partner-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.partner {
+  margin: 25px 0;
+}
+
+.partner .partner-logos img {
+  max-height: 200px;
+  margin: auto 60px;
+}
+
+#ukrsprings,
+#vsl,
+#galicia,
+#vivat {
+  height: 80px;
+}
+
+#vuhocom {
+  height: 100px;
+}
+
+#molokia {
+  height: 125px;
+}
+
+#chocoboom,
+#mhp,
+#artlinia {
+  height: 150px;
+}
+
+#enjoy {
+  float: center;
+  margin: 0 8% 0 5%;
+  max-height: 200px;
+}
+
+.tickets a {
+  text-decoration: none;
+  margin: 20px auto;
+  margin-bottom: 0;
+  display: block;
+  width: 202px;
+}
+.tickets a button {
+  transition: 0.05s;
+  /* font-size: 21px; */
+  border: 0;
+  background-color: #27ae60;
+  color: white;
+  text-decoration: none;
+  font-family: Roboto Slab;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  outline: 0;
+
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 16px;
+  box-shadow: 0 0 10px -2px #c1c1c1;
+}
+.tickets .half.right div > div {
+  padding: 10px 20px;
+  background-color: #282828;
+  color: white;
+  display: inline-block;
+  margin: 10px;
+  border-radius: 3px;
+  box-shadow: 0 0 10px -2px #c1c1c1;
+}
+.tickets .half.left {
+  text-align: right;
+  border-right: 1px solid #282828;
+  box-sizing: border-box;
+  height: 300px;
+  padding-right: 10px;
+}
+.tickets .half.right {
+  border-left: 1px solid #282828;
+  box-sizing: border-box;
+  height: 300px;
+  padding-left: 10px;
+}
+.tickets {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.55);
+}
+.slick-slide:hover > span {
+  opacity: 0.9;
+}
+
+.slick-slider .slick-slide p {
+  background-color: #f42928;
+  width: 100%;
+  height: 80px;
+  margin: 0;
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slick-slider .slick-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+  height: 230px;
+}
+.slick-slider .slick-slide {
+  cursor: pointer;
+  float: left;
+  position: relative;
+  width: 230px;
+  margin: 10px;
+  box-shadow: 0 0 6px 0px rgb(25, 25, 25);
+  border-radius: 3px;
+  height: 310px;
+  overflow: hidden;
+  background-color: #282828;
+}
